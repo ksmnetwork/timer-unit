@@ -45,3 +45,16 @@ ExecStart=/usr/sbin/polkadot \
 [Install]
 WantedBy=multi-user.target
 ```
+
+```
+sudo systemctl daemon-reload
+```
+```
+systemctl --now enable kusama.timer
+```
+```
+systemctl status kusama.timer
+```
+```
+systemctl list-timers --no-pager --all
+```
